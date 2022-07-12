@@ -14,7 +14,7 @@ const resolvers = {
       return dataSources.trackAPI.getAuthor(authorId);
     },
     modules: ({ id }, _, { dataSources }) => {
-      return dataSources.trackAPI.getTrackModules();
+      return dataSources.trackAPI.getTrackModules(id);
     },
   },
 };
